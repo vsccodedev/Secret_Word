@@ -1,0 +1,54 @@
+
+.start h1 {
+    font-size: 3.5em;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+.start h1 .word {
+    position: relative;
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+.start h1 .word .overlay {
+    position: absolute;
+    right: 0.08em;
+    top: 0;
+    background-color: #f4c312;
+    color: black;
+    padding: 0.1em 0.15em;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 3px;
+    z-index: 2;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.start h1 .word::after {
+    content: 'D';
+    right: -0.5em;
+    position: relative;
+    z-index: 3;
+}
+
+.start p {
+    margin-bottom: 2em;
+    color: #ecfa00;
+}
+
+.start button {
+    background-color: #f4c312;
+    color: black;
+    padding: 0.5em 1em;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.4s ease;
+}
+
+.start button:hover {
+    background-color: #d4e200;
+}
